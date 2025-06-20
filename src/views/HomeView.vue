@@ -1,5 +1,5 @@
 <script setup>
-import CalculatorLayout from '../layout/CalculatorLayout.vue'
+import CalculatorLayout from '../components/layout/CalculatorLayout.vue'
 </script>
 
 <template>

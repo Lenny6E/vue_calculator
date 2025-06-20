@@ -1,10 +1,10 @@
 <template>
-  <button>{{ value }}</button>
+  <button @click="onClick">{{ props.label }}</button>
 </template>
 
 <script setup>
 const props = defineProps({
-  function: {
+  label: {
     type: String,
     required: true
   },
@@ -13,22 +13,14 @@ const props = defineProps({
     required: true
   }
 });
-
-const { value, onClick } = props;
 </script>
 
 <style scoped>
 button {
-  font-size: 16px;
-  padding: 10px;
-  margin: 5px;
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #ccc;
+  flex: 1 0 30%;
+  font-size: 20px;
+  padding: 15px;
+  background-color: blue;
+  border: 1px solid blue;
 }
 </style>
